@@ -1,6 +1,7 @@
 package com.galvanize.demo;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController
@@ -15,4 +16,6 @@ class Warmup{
 	public String getId(@PathVariable String id){
 		return "You got " + id;
 	}
+    @PostMapping("/add-pokemon")
+    public String addToHashMap() {return ""}
 }

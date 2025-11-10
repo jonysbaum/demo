@@ -2,6 +2,7 @@ package com.galvanize.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -30,5 +31,10 @@ class controller {
     @GetMapping("/pokemon")
     public HashMap getMons() {
         return pairs;
+    }
+
+    @PostMapping("/pokemon/add-entry")
+    public HashMap addPokemon() {
+        return null;
     }
 }
