@@ -1,7 +1,10 @@
 package com.galvanize.demo;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 
 @RestController
@@ -17,5 +20,5 @@ class Warmup{
 		return "You got " + id;
 	}
     @PostMapping("/add-pokemon")
-    public String addToHashMap() {return ""}
+    public String addToHashMap() {return null;}
 }
